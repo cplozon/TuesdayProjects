@@ -1,16 +1,16 @@
 
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import SearchBar from './components/search_bar';
-import List from './components/list';
-import Detail from './components/detail'
+import SearchBar from './search_bar';
+import List from './list';
+import Detail from './detail'
 import YTSearch from 'youtube-api-search';
 
 
 
 const API_KEY = "AIzaSyA7qpYTkyEEt_FSySWfVfY0rFFBMf58L4k";
 
-class Application extends Component {
+class YouTube extends Component {
   constructor(props) {
     super(props);
     this.state = {videos: [], selectedVideo: null};
@@ -52,4 +52,4 @@ class Application extends Component {
   }
 }
 
-ReactDOM.render(<Application />,document.querySelector('#root'));
+export default YouTube;

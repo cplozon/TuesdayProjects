@@ -1,16 +1,6 @@
-import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
-import { Elements } from './theme'
+import React from "react";
+import Application from "./app.js"
 
-class Example extends Component {
 
-	render () {
-		return (
-			<div>
-				<Elements />
-			</div>
 
-			)
-	}
-
-ReactDOM.render(<Example />, document.getElementById('root'))
+ReactDOM.render(<Application />, document.getElementById('root'))

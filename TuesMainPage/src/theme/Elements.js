@@ -21,16 +21,16 @@ export default (props) => {
 			<div id="wrapper">
 				<section id="intro" className="wrapper style1 fullscreen fade-up">
 					<div className="inner">
-						<h1>My Auto Medic</h1><br />
+						<h1>My Auto Medic</h1>
 						
-						<p>Your one resource for Do It Yourself car repairs and other diagnostic information.</p><br />
-						Supplying top rated how to videos, articles, step by step diagnosis, and your local mechanic information.</p><<br />
-						<p>The Most Helpful YouTube Videos Based On Your Search</p><br />
+						<p>Your one resource for Do It Yourself car repairs and other diagnostic information.</p>
+						<p>Supplying top rated how to videos, articles, step by step diagnosis, and your local mechanic information.</p>
+						<p>The Most Helpful YouTube Videos Based On Your Search</p>
 
-						<p>Top Articles From The Best DIY Mechanic Sites</p><br />
-						<p>Diagnostic Question And Answer For An Accurate Diagnosis</p><br />
-						<p>On-Board Diagnostic (OBD) Diagnostic Search</p><br />
-						<p>Local Mechanics In Your Area</p><<br />
+						<p>Top Articles From The Best DIY Mechanic Sites</p>
+						<p>Diagnostic Question And Answer For An Accurate Diagnosis</p>
+						<p>On-Board Diagnostic (OBD) Diagnostic Search</p>
+						<p>Local Mechanics In Your Area</p>
 						<ul className="actions">
 							<li><a href="#one" className="button scrolly">Find A Solution Now</a></li>
 						</ul>
