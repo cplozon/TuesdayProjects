@@ -1,0 +1,31 @@
+
+.centered {
+    width: 50%;
+    margin: auto;
+    text-align:center;
+}
+
+.form {
+    display:grid;
+    grid-template-columns: 70px 1fr 100px;
+    grid-gap: 10px;
+    text-align: right;
+  }
+ 
+
+.form label {
+    grid-column: 1 / 2;
+    font-size: smaller;
+    font-weight: bold;
+}
+.form input {
+    grid-column: 2 / 4;
+    padding: 2px;
+}
+
+.form button {
+    grid-column: 3 / 4;
+}
+
+
+  
