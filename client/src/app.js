@@ -4,8 +4,9 @@ import YouTubeSeach from './components/YouTube';
 
 const App = (props) => 
     <div>
-        <Diagnostic />
+       
         <YouTubeSeach />
+        <Diagnostic />
     </div>
 
 export default App;
