@@ -1,24 +1,22 @@
 import React, {Component} from 'react';
-import { render } from 'react-dom';
+import ReactDOM from 'react-dom';
 import { YouTubeSearch } from './YouTubeSearch';
-
+import Diagnostic from './components/ODM/diagnostic';
 
 window.React = React
 
-render (
-	<YouTubeSearch />,
-	document.getElementById('root')
-	)
+class Root extends Component {
+	render (){
+		return (
+			<div>
+				<YouTubeSearch />
+				<Diagnostic />
+			</div>
+			)
 
 
-// class YouTube extends Component {
-// 	render(){
-// 		return(
-// 			<div>
-// 				<YouTubeSearch />
-// 				</div>
-// 			)
-// 	}
-// }
+	}
 
-// ReactDOM.render(<YouTube />, document.getElementById('root'))
+}
+
+ReactDOM.render(<Root />, document.getElementById('root'))

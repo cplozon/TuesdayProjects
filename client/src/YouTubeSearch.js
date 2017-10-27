@@ -3,7 +3,8 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import SearchBar from './components/YouTube/search_bar';
 import List from './components/YouTube/list';
-import Detail from './components/YouTube/detail'
+import Detail from './components/YouTube/detail';
+import Footer from './components/YouTube/Footer';
 import YTSearch from 'youtube-api-search';
 
 
@@ -47,7 +48,10 @@ export class YouTubeSearch extends Component {
             />
           </div>
         </div>
+        <Footer />
       </div>
+
+
     );
   }
 }

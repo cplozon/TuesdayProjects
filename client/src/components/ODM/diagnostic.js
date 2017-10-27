@@ -48,6 +48,9 @@ class Diagnostic extends Component {
             {this.renderReport()}
             {this.props.children}
          </div>
+         
+           
+        
         );
      }
  
