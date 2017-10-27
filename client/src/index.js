@@ -1,14 +1,9 @@
-import React, {Component} from 'react';
-import { render } from 'react-dom';
-// import { YouTubeSearch } from './YouTubeSearch';
-import Diagnostic from './components/ODM/diagnostic';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './app';
+
+ReactDOM.render(<App />,document.getElementById('root'));
 
 
- window.React = React
 
- render (
- 	// <YouTubeSearch />,
-	<Diagnostic />,
- 	document.getElementById('root')
- 	)
-
+ 
