@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import SearchBar from './search_bar';
 import List from './list';
 import Detail from './detail'
+import Sidebar from '../theme/Sidebar'
 import YTSearch from 'youtube-api-search';
 
 const API_KEY = "AIzaSyA7qpYTkyEEt_FSySWfVfY0rFFBMf58L4k";
@@ -27,7 +28,7 @@ class YouTubeSearch extends Component {
 
   render() {
     return (
-      <div className="container-fluid">
+      <div className="container-fluid" id="wrapper">
         <div className="row">
           <div className="col-md-12">
             <SearchBar onSearchTerm={this.search.bind(this)} />
