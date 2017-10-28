@@ -40,10 +40,10 @@ export default (props) => {
 				
 				
 				<section id="one" className="wrapper style2 spotlights">
-					<Post title="Search Your Car Problem" image={pic8} text="Search Now For The Best Information Available" />
-					<Post title="My Auto Medic Diagnostic Tool" image={pic4} text="Use Our Unique Step By Step Diagnostic Tool" />
-					<Post title="Search Your ODM Code" image={pic9} text="Search ODM Code" />
-					<Post title="Find The Best Local Mechanics In Your Area" image={pic3} text="Use Our Unique Step By Step Diagnostic Tool" />
+					<Post title="Search Your Car Problem" image={pic8} text="Search Now For The Best Information Available" href="/VideoSearch" />
+					<Post title="My Auto Medic Diagnostic Tool" image={pic4} text="Use Our Unique Step By Step Diagnostic Tool" href="/" />
+					<Post title="Search Your ODM Code" image={pic9} text="Search ODM Code" href="Diagnostic" />
+					<Post title="Find The Best Local Mechanics In Your Area" image={pic3} text="Use Our Unique Step By Step Diagnostic Tool" href="AddYourCar" />
 				</section>
 
 				
@@ -57,7 +57,7 @@ export default (props) => {
 							<Feature icon="icon major fa-lock" />
 						</div>
 						<ul className="actions">
-							<li><a href="#" className="button">Learn more</a></li>
+							<li><a href="/" className="button">Learn more</a></li>
 						</ul>
 					</div>
 				</section>
