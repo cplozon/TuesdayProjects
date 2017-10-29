@@ -8,9 +8,9 @@ class Sidebar extends Component {
 					<nav>
 						<ul>
 							<li><a href="#intro">My Auto Medic</a></li>
-							<li><a href="#one">DIYY Car Repair Resources</a></li>
+							<li><a href="#one">DIY Car Repair Resources</a></li>
 							<li><a href="#one">Diagnose Your Car Problem</a></li>
-							<li><a href="#one">Find A Mechanic</a></li>
+							<li><a href="#one">Find A Local Mechanic</a></li>
 							<li><a href="#two">Account Log In</a></li>
 						</ul>
 					</nav>
