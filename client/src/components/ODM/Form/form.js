@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./form.css";
+import Footer from '../../theme/Footer'
 
 class Form extends Component {
   state = {errorCode: '', vin: ''};
@@ -7,6 +8,7 @@ class Form extends Component {
   
   render() {
      return (
+      <div>
       <div className="centered">
         <h2>Vehicle Diagnostic</h2>
         <form className="form">
@@ -33,6 +35,8 @@ class Form extends Component {
               this.props.onSubmit(this.state);
             }}>Submit</button>
         </form>
+      </div>
+       <Footer />
       </div>
     );
   }

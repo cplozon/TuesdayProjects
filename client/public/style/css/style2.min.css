@@ -2387,7 +2387,7 @@ body.is-loading .wrapper.fade>.inner{opacity:0}
 {#sidebar+#wrapper+#footer{margin-left:0}}
 #footer>.inner a{border-bottom-color:rgba(255,255,255,.15)}
 #footer>.inner a:hover{border-bottom-color:transparent}
-#footer>.inner .menu{font-size:.8em;color:rgba(255,255,255,.15)}
+#footer>.inner .menu{font-size:1.2em;color:rgba(255,255,255,.5)}
 #header+#wrapper+#footer>.inner{margin:0 auto}
 #sidebar{padding:2.5em 2.5em .5em;
 		background:#212121;
@@ -2555,6 +2555,12 @@ body.is-loading
 #sidebar nav a:after{background-image:none;background-color:#FBFCFC}
 #intro
 {background-attachment:scroll}}
+#centerfooter {
+	text-align: center
+}
+#fineline {
+	border-right: 1px solid white;
+}
 
 
 

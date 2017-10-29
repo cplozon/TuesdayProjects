@@ -4,6 +4,7 @@ import SearchBar from './search_bar';
 import List from './list';
 import Detail from './detail'
 import Sidebar from '../theme/Sidebar'
+import Footer from '../theme/Footer'
 import YTSearch from 'youtube-api-search';
 
 const API_KEY = "AIzaSyA7qpYTkyEEt_FSySWfVfY0rFFBMf58L4k";
@@ -28,6 +29,7 @@ class YouTubeSearch extends Component {
 
   render() {
     return (
+      <div>
       <div className="container-fluid" id="wrapper">
         <div className="row">
           <div className="col-md-12">
@@ -45,6 +47,8 @@ class YouTubeSearch extends Component {
             />
           </div>
         </div>
+      </div>
+      <Footer />
       </div>
     );
   }

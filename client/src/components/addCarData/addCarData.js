@@ -1,4 +1,5 @@
-import React, { PropTypes, Component } from 'react'
+import React, { PropTypes, Component } from 'react';
+import Footer from '../theme/Footer';
 
 const carMakes = [
 	"Acura",
