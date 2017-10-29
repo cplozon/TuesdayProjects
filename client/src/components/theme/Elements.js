@@ -11,6 +11,7 @@ const pic2 = require('./images/pic02.jpg')
 const pic3 = require('./images/pic03.jpg')
 const pic4 = require('./images/pic04.jpg')
 const pic8 = require('./images/pic08.jpg')
+const pic7 = require('./images/pic07.jpg')
 const pic9 = require('./images/pic09.jpg')
 
 
@@ -22,15 +23,20 @@ export default (props) => {
 				<section id="intro" className="wrapper style1 fullscreen fade-up">
 					<div className="inner">
 						<h1>My Auto Medic</h1><br />
-						
-						<p>Yourr one resource for Do It Yourself car repairs and other diagnostic information.</p><br />
-						<p>Supplying top rated how to videos, articles, step by step diagnosis, and your local mechanic information.</p><br />
-						<p>The Most Helpful YouTube Videos Based On Your Search</p><br />
-
-						<p>Top Articles From The Best DIY Mechanic Sites</p><br />
-						<p>Diagnostic Question And Answer For An Accurate Diagnosis</p><br />
-						<p>On-Board Diagnostic (OBD) Diagnostic Search</p><br />
-						<p>Local Mechanics In Your Area</p><br />
+						<div className="bigtext">
+						<p>Your First Resource For Do-It-Yourself Automotive Repairs And Car Diagnostic Information</p><br /></div>
+						<div className="bigtext">
+						<p>Supplying Top Rated How-To Videos, Articles, Step By Step Diagnosis, And Your Local Mechanic Information</p><br /></div>
+						<div className="bigtext">
+						<p>The Most Helpful YouTube Videos Based On Your Search</p><br /></div>
+						<div className="bigtext">
+						<p>Top Articles From The Best DIY Mechanic Sites</p><br /></div>
+						<div className="bigtext">
+						<p>Diagnostic Question And Answer For An Accurate Diagnosis</p><br /></div>
+						<div className="bigtext">
+						<p>On-Board Diagnostic (OBD) Diagnostic Search</p><br /></div>
+						<div className="bigtext">
+						<p>Find Local Mechanics In Your Area</p><br /></div>
 						<ul className="actions">
 							<li><a href="#one" className="button scrolly">Find A Solution Now</a></li>
 						</ul>
@@ -40,10 +46,10 @@ export default (props) => {
 				
 				
 				<section id="one" className="wrapper style2 spotlights">
-					<Post title="Search Your Car Problem" image={pic8} text="Search Now For The Best Information Available" href="/VideoSearch" />
-					<Post title="My Auto Medic Diagnostic Tool" image={pic4} text="Use Our Unique Step By Step Diagnostic Tool" href="/" />
-					<Post title="Search Your ODM Code" image={pic9} text="Search ODM Code" href="Diagnostic" />
-					<Post title="Find The Best Local Mechanics In Your Area" image={pic3} text="Use Our Unique Step By Step Diagnostic Tool" href="AddYourCar" />
+					<Post title="Search Your Car Problem" image={pic8} text="Find The Best Information Available For Your DIY Automotive Repair Project" href="/VideoSearch" />
+					<Post title="Auto Medic Diagnostic Tool" image={pic4} text="Use Our Unique Step By Step Diagnostic Tool For Solving Your Automotive Problem" href="/" />
+					<Post title="Search Your On-Board Diagnostic Code" image={pic9} text="Search DBD Code To Trouble Shoot Your Car Problem" href="Diagnostic" />
+					<Post title="Find The Best Local Mechanics In Your Area" image={pic7} text="Find The Best Mechanics In Your Area" href="AddYourCar" />
 				</section>
 
 				

@@ -7,7 +7,9 @@ export default (props) => {
 			<div className="content">
 				<div className="inner">
 					<h2>{props.title}</h2>
-					<p>{props.text}</p>
+					<div className="textup">
+					<h5>{props.text}</h5>
+					</div>
 					<ul className="actions">
 						<li><a href={props.href} className="button">More Information</a></li>
 					</ul>
