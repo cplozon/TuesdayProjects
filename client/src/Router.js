@@ -4,6 +4,7 @@ import Diagnostic from './components/ODM';
 import  YouTubeSeach  from './components/YouTube';
 import  Elements  from './components/theme/Elements';
 import AddCarData from './components/addCarData';
+import Gmap from './components/map';
 
 const App = (props) => 
  {
@@ -14,6 +15,7 @@ const App = (props) =>
 				<Route exact path={"/VideoSearch"} component={YouTubeSeach} />
 				<Route exact path={"/Diagnostic"} component={Diagnostic} />
 				<Route exact path={"/AddYourCar"} component={AddCarData} />
+				<Route exact path={"/FindMechanics"} component={Gmap} />
 				</Switch>
 			</Router>
 			);
