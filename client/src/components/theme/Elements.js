@@ -48,8 +48,8 @@ export default (props) => {
 				<section id="one" className="wrapper style2 spotlights">
 					<Post title="Search Your Car Problem" image={pic8} text="Find The Best Information Available For Your DIY Automotive Repair Project" href="/VideoSearch" />
 					<Post title="Auto Medic Diagnostic Tool" image={pic4} text="Use Our Unique Step By Step Diagnostic Tool For Solving Your Automotive Problem" href="/" />
-					<Post title="Search Your On-Board Diagnostic Code" image={pic9} text="Search DBD Code To Trouble Shoot Your Car Problem" href="Diagnostic" />
-					<Post title="Find The Best Local Mechanics In Your Area" image={pic7} text="Find The Best Mechanics In Your Area" href="AddYourCar" />
+					<Post title="Search Your On-Board Diagnostic Code" image={pic9} text="Search DBD Code To Trouble Shoot Your Car Problem" href="/Diagnostic" />
+					<Post title="Find The Best Local Mechanics In Your Area" image={pic7} text="Find The Best Mechanics In Your Area" href="/AddYourCar" />
 				</section>
 
 				
