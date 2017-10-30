@@ -1,4 +1,3 @@
-
 import React, {Component} from 'react';
 import SearchBar from './search_bar';
 import List from './list';
