@@ -2313,9 +2313,10 @@ body.is-loading
 .youtubebackground {
 	background-color:lightgrey;
 }
-.media {
+/*.media {
   curoer: pointer;
-}
+  align-items: center;
+}*/
 
 .media:hover {
   background-color: #eee;
@@ -2362,3 +2363,4 @@ body.is-loading
 		background-image:url("../images/backpaper2.jpg");
 		background-position:top right;
 		background-repeat:no-repeat;background-size:100% 100%}
+
