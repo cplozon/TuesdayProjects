@@ -5,10 +5,11 @@ import List from './list';
 import Detail from './detail'
 import Sidebar from '../theme/Sidebar'
 import Footer from '../theme/Footer'
-import Post from '../theme/Post'
+import YouTubHeader from "./YouTubHeader"
+
 import YTSearch from 'youtube-api-search';
 
-const pic8 = require('../theme/images/pic08.jpg')
+
 
 const API_KEY = "AIzaSyA7qpYTkyEEt_FSySWfVfY0rFFBMf58L4k";
 
@@ -34,25 +35,27 @@ class YouTubeSearch extends Component {
     return (
     <div>
       <Sidebar />
+     
+ 
         <div id="wrapper">
-
-          <section id="one" className="wrapper style2 spotlights">
-            <Post title="Search Your Car Problem" image={pic8} text="Find The Best Information Available For Your DIY Automotive Repair Project" href="/" />
-          </section>
-
+        <YouTubHeader />
+          
+             
       <div className="container-fluid" id="wrapper">
         <div className="row" id="center">
           <div className="col-md-12">
             <SearchBar onSearchTerm={this.search.bind(this)} />
           </div>
         </div>
-        <br />
+     
         <div className="row" id="center">
           <div className="col-md-6">
+           <br />
             <Detail video={this.state.selectedVideo} />
           </div>
           <br />
           <div className=".col-md-6"id="center">
+           <br />
             <List
               videos={this.state.videos}
               onVideoSelect={(selectedVideo) => this.onVideoSelect(selectedVideo)}

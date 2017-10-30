@@ -7,6 +7,7 @@ const Item = ({video, onVideoSelect}) => {
 
   return (
     <li className="media" onClick={() => onVideoSelect(video)}>
+          
       <div className="media-left">
         <a href="#">
           <img className="media-object" src={imageUrl} alt="{title}" />
@@ -14,6 +15,7 @@ const Item = ({video, onVideoSelect}) => {
       </div>
       <div className="media-body">
         <h5 className="media-heading">{snippet.title}</h5>
+        
       </div>
     </li>
   )
