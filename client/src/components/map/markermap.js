@@ -3,7 +3,7 @@ import { Gmaps, Marker, InfoWindow } from 'react-gmaps';
 
 const params = { v: '3.exp', key: 'AIzaSyA18bfzvU1Jmv-v4qlYsevRkV6UzvngU1Q' };
 
-export default class GMap extends Component {
+export default class GMap2 extends Component {
   state = { infoWindows: [] }
 
   toggleInfoWindow(index) {
