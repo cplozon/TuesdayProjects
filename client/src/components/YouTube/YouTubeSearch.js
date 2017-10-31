@@ -5,7 +5,7 @@ import Detail from './detail'
 import Sidebar from '../theme/Sidebar'
 import Footer from '../theme/Footer'
 import YouTubHeader from "./YouTubHeader"
-
+import ScrapedArticles from "./ScrapedArticles"
 import YTSearch from 'youtube-api-search';
 
 
@@ -34,18 +34,14 @@ class YouTubeSearch extends Component {
     return (
     <div>
       <Sidebar />
-     
- 
         <div id="wrapper">
         <YouTubHeader />
-          
-             
-      <div className="container-fluid" id="wrapper">
-        <div className="row" id="center">
-          <div className="col-md-12">
-            <SearchBar onSearchTerm={this.search.bind(this)} />
+          <div className="container-fluid" id="wrapper">
+            <div className="row" id="center">
+             <div className="col-md-12">
+              <SearchBar onSearchTerm={this.search.bind(this)} />
+            </div>
           </div>
-        </div>
      
         <div className="row" id="center">
           <div className="col-md-6">
@@ -59,12 +55,13 @@ class YouTubeSearch extends Component {
               videos={this.state.videos}
               onVideoSelect={(selectedVideo) => this.onVideoSelect(selectedVideo)}
             />
-          </div>
+            </div>
+            </div>
         </div>
+        <ScrapedArticles />
+         <Footer />
       </div>
-      </div>
-      <Footer />
-      </div>
+    </div>
 
     );
   }

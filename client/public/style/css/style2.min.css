@@ -2362,3 +2362,58 @@ body.is-loading
 		background-image:url("../images/backpaper2.jpg");
 		background-position:top right;
 		background-repeat:no-repeat;background-size:100% 100%}
+
+.report {
+    border: thin ridge black;
+    border-radius: 2px 3px;
+    background-color: lightgray;
+    width: 50%;
+    margin:auto;
+    margin-top: 2em;
+    text-align:center;
+}
+
+.report span.system {
+    font-weight: bold;
+    padding-right: 1ex;
+}
+
+.report span.fault{
+    font-style: italic;
+    color: darkred;
+    padding-left: 1ex;
+}
+
+.formone {
+	background-color: black;
+	text-align: left;
+	color: lightgrey;
+	margin:125px;
+}
+
+#centered {
+	text-align: center;
+	font-size: 32px;
+	font-style: bold;
+}
+
+.chart {
+	border: 1px solid black;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	padding: 25px;
+	background: white;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#space {
+	margin-bottom: 25px;
+}
+
+#boxtext {
+	text-align: center;
+	font-size: 25px;
+	padding-top: 50px;
+}
