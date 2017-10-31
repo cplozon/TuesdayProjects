@@ -2313,9 +2313,10 @@ body.is-loading
 .youtubebackground {
 	background-color:lightgrey;
 }
-.media {
+/*.media {
   curoer: pointer;
-}
+  align-items: center;
+}*/
 
 .media:hover {
   background-color: #eee;

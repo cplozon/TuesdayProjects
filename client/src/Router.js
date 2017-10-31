@@ -5,6 +5,7 @@ import  YouTubeSeach  from './components/YouTube';
 import  Elements  from './components/theme/Elements';
 import AddCarData from './components/addCarData';
 import Gmap from './components/map';
+//import Gmap2 from './components/map';
 import MainChart from './components/flowchart/MainChart';
 import LooksLike from './components/flowchart/LooksLike';
 import SoundsLike from './components/flowchart/SoundsLike';

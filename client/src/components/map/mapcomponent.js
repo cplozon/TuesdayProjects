@@ -1,60 +1,55 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {Gmaps, Marker, InfoWindow, Circle} from 'react-gmaps';
-//import GooglePlaces from 'react-google-places-component';
- 
-const coords = {
-  lat: 35.900151,
-  lng: -79.012806
-};
- 
-const params = {v: '3.exp', key: 'AIzaSyA18bfzvU1Jmv-v4qlYsevRkV6UzvngU1Q'};
+import React from "react"
+import { compose, withProps } from "recompose"
+import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
+import PlacesData from "../../lib/mapsearch"
 
-class GMap extends React.Component {
- 
-  onMapCreated(map) {
-    map.setOptions({
-      disableDefaultUI: true
-    });
+const shops = PlacesData.results;
+
+const MyMapComponent = compose(
+  withProps({
+    googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyA18bfzvU1Jmv-v4qlYsevRkV6UzvngU1Q&v=3.exp&libraries=geometry,drawing,places",
+    loadingElement: <div style={{ height: `100%` }} />,
+    containerElement: <div style={{ height: `600px` }} />,
+    mapElement: <div style={{ height: `100%` }} />,
+  }),
+  withScriptjs,
+  withGoogleMap
+)((props) =>
+  (<GoogleMap
+    defaultZoom={14}
+    defaultCenter={{ lat: 35.900151, lng: -79.012806 }}
+  >
+    
+    {shops.map(shop => 
+      <Marker position={{ lat: shop.geometry.location.lat, lng: shop.geometry.location.lng }} 
+              onClick={props.onMarkerClick} 
+              defaultTitle={shop.name} />
+    )}
+
+   </GoogleMap>)
+);
+
+class MyFancyComponent extends React.PureComponent {
+  state = {
   }
- 
-  onDragEnd(e) {
-    console.log('onDragEnd', e);
+
+  renderMarkers() {
   }
- 
-  onCloseClick() {
-    console.log('onCloseClick');
+
+  componentDidMount() {
   }
- 
-  onClick(e) {
-    console.log('onClick', e);
+
+  handleMarkerClick = () => {
+    console.log("Hi");
   }
- 
+
   render() {
     return (
-      <Gmaps
-        width={'800px'}
-        height={'600px'}
-        lat={coords.lat}
-        lng={coords.lng}
-        zoom={15}
-        loadingMessage={'Be happy'}
-        params={params}
-        onMapCreated={this.onMapCreated}>
-        <Marker
-          lat={coords.lat}
-          lng={coords.lng}
-          draggable={true}
-          onDragEnd={this.onDragEnd} />
-        <InfoWindow
-          lat={coords.lat}
-          lng={coords.lng}
-          content={'Friday Center'}
-          onCloseClick={this.onCloseClick} />
-        </Gmaps>
-    );
+      <MyMapComponent
+        onMarkerClick={this.handleMarkerClick}
+      />
+    )
   }
- 
-};
+}
 
-export default GMap;
+export default MyFancyComponent
