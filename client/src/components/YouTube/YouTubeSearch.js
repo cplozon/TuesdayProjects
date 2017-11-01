@@ -2,10 +2,11 @@ import React, {Component} from 'react';
 import SearchBar from './search_bar';
 import List from './list';
 import Detail from './detail'
-import Sidebar from '../theme/Sidebar'
+import SidebarTwo from '../theme/SidebarTwo'
 import Footer from '../theme/Footer'
 import YouTubHeader from "./YouTubHeader"
 import ScrapedArticles from "./ScrapedArticles"
+import ScrapeTwo from "./ScrapeTwo"
 import YTSearch from 'youtube-api-search';
 
 
@@ -33,7 +34,7 @@ class YouTubeSearch extends Component {
   render() {
     return (
     <div>
-      <Sidebar />
+      <SidebarTwo />
         <div id="wrapper">
         <YouTubHeader />
           <div className="container-fluid" id="wrapper">
@@ -58,7 +59,14 @@ class YouTubeSearch extends Component {
             </div>
             </div>
         </div>
+        <br />
+        <br />
+        <br />
         <ScrapedArticles />
+        <ScrapeTwo />
+        <br />
+        <br />
+        <br />
          <Footer />
       </div>
     </div>

@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { Component } from 'react';
 import cheerio from 'cheerio';
 
-class ScrapedArticles extends Component {
+class ScrapeTwo extends Component {
   state = {
     articles: []
   }
@@ -22,7 +22,7 @@ class ScrapedArticles extends Component {
 
       article.title = $(element).children("a").text();
       article.subTitle = $(element).children("a").text();
-      article.link = "https://www.autoblog.com" + $(element).children("a").attr("href");
+      article.link = $(element).children("a").attr("href");
     
       if (scrapedArticles.length < 3) {
       scrapedArticles.push(article);
@@ -35,7 +35,7 @@ class ScrapedArticles extends Component {
     this.setState({articles:scrapedArticles});
       console.log(scrapedArticles);
 
-      console.log($(".media-heading").length);
+      console.log($(".title").length);
     })
     .catch(error => {
       console.log('Error fetching and parsing data', error);
@@ -89,7 +89,7 @@ class ScrapedArticles extends Component {
             
             <div className="panel panel-primary">
             <br />
-            <h3>The Best Articles From Auto Blog</h3>
+            <h3>The Best Articles From DIY Auto Repair</h3>
               <div className="panel-heading">
                 <h1 className="panel-title">
                   <strong>
@@ -124,5 +124,5 @@ class ScrapedArticles extends Component {
 };
 
 // Export the module back to the route
-export default ScrapedArticles;
+export default ScrapeTwo;
 

@@ -1,10 +1,9 @@
-
 import React, { Component } from 'react';
 import ChartHeader from "./ChartHeader";
 import SidebarTwo from '../theme/SidebarTwo';
 import Footer from '../theme/Footer';
 
-class Smoke extends Component {
+class SmellTwo extends Component {
 	render(){
 		return (
 			<div>
@@ -20,14 +19,12 @@ class Smoke extends Component {
 											<div className="row" id="flowheading">
 												
 												<div className="col-6-md">
-												<h2>What Color Is The Smoke?</h2>
-												<br />
-													<a href="/BlackSmoke" className="button submit" id="space">Black Smoke</a>
-												<br />
-													<a href="/WhiteSmoke" className="button submit" id="space">White Smoke</a>
-												<br />
-													<a href="/BlueSmoke" className="button submit" id="space">Blue Smoke</a>
-												<br />
+													<h2>Recommendation</h2>
+													<br />
+													<h2>The drain pan of the A/C evaporator unit isn't draining.</h2> 
+													<h2>It is best to have an A/C specialist look at this, </h2>
+													<h2>as the clog may be further up in the system and difficult to access</h2>
+													<br />
 													<a href="/MainChart" className="button submit" id="space">Start Over</a>
 												<br />
 													
@@ -53,7 +50,6 @@ class Smoke extends Component {
 	}
 }
 
-export default Smoke
-
+export default SmellTwo
 
 
