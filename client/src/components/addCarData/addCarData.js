@@ -54,27 +54,176 @@ const carMakes = [
 	"Volvo"
 ]
 
+const carModels = [
+	"4Runner",
+	"A3 Quattro",
+	"Accent",
+	"Accord",
+	"Accord Hybrid",
+	"Aerio",
+	"Altima",
+	"Amanti",
+	"Armada",
+	"Avalon",
+	"Azera",
+	"Boxter",
+	"C230",
+	"C280",
+	"C350",
+	"C55 AMG",
+	"CL65 AMG",
+	"CLK350",
+	"CLS500",
+	"CLS55 AMG",
+	"Camry",
+	"Carrera 2 Coupe",
+	"Cayenne",
+	"Cayman S",
+	"Civic",
+	"Civic Hybrid",
+	"Corolla",
+	"Coupe Cambiocorsa",
+	"CR-V",
+	"E320 CDI",
+	"E350",
+	"E500",
+	"E55 AMG",
+	"Eclipse",
+	"Elantra",
+	"Element",
+	"Endeavor",
+	"Frontier",
+	"FX35",
+	"G35",
+	"Galant",
+	"Grand Vitara XL-7",
+	"Grand Vitara XV6",
+	"Golf",
+	"Highlander",
+	"Insight",
+	"Jetta",
+	"Lancer",
+	"Lancer Evolution",
+	"Lancer Sportback",
+	"LR3",
+	"M35",
+	"M35X",
+	"M45",
+	"Maxima",
+	"Maybach 57S",
+	"Maybach 62",
+	"Mazda 3",
+	"Mazda 5",
+	"Mazda 6",
+	"Mazda RX-8",
+	"MDX",
+	"ML350",
+	"ML500",
+	"MPV",
+	"MX-5",
+	"Montero",
+	"Murano",
+	"New Beetle",
+	"Odyssey",
+	"Optima",
+	"Outlander",
+	"Passat",
+	"Pathfinder",
+	"Phaeton",
+	"Pilot",
+	"Prius",
+	"R350",
+	"R500",
+	"Range Rover",
+	"Range Rover Sport",
+	"Ridgeline",
+	"Rio",
+	"RL",
+	"RSX",
+	"Q45",
+	"Quattroporte",
+	"Quest",
+	"QX56",
+	"Rabbit",
+	"Rav4",
+	"S-Type",
+	"S2000",
+	"S350",
+	"S40",
+	"S430",
+	"S60",
+	"S80",
+	"SL500",
+	"SL600",
+	"SL65 AMG",
+	"SLK280",
+	"SLK350",
+	"SLR",
+	"Santa Fe",
+	"Scion",
+	"Sedona",
+	"Sequoia",
+	"Sentra",
+	"Sienna",
+	"Sonata",
+	"Sorento",
+	"Spectra",
+	"Sportage",
+	"Tacoma",
+	"Tiburon",
+	"Titan",
+	"TL",
+	"Touareg",
+	"TSX",
+	"Tucson",
+	"Tundra",
+	"V50",
+	"V70",
+	"VDP LWB",
+	"X-Type",
+	"XC 70",
+	"XC 90",
+	"XJ8",
+	"XK8 Convertible",
+	"XKR Convertible",
+	"Xterra",
+	"Yaris",
+]
+
+
 class Autocomplete extends Component {
 	
 	get value() {
-		return this.refs.inputCar.value
+		return this.refs.inputMake.value
 	}
 
 	set value(inputValue) {
-		this.refs.inputCar.value = inputValue
+		this.refs.inputMake.value = inputValue
 	}
 
 	render() {
 		return (
 			<div>
-				<input ref="inputCar"
+				<div>
+					<input ref="inputMake"
 					   type="text" 
 					   list="carMakes" />
-				<datalist id="carMakes">
-					{this.props.options.map(
-						(opt, i) => 
-						<option key={i}>{opt}</option>)}
-				</datalist>
+					<datalist id="carMakes">
+						{this.props.options.map(
+							(opt, i) => 
+							<option key={i}>{opt}</option>)}
+					</datalist>
+				</div>
+				<div>
+					<input ref="inputCar"
+						type="text" 
+						list="carModels" />
+			 			<datalist id="carModels">
+				 			{this.props.options.map(
+					 			(opt, i) => 
+					 			<option key={i}>{opt}</option>)}
+			 			</datalist>		
+				</div>			
 			</div>
 		)
 	}
@@ -106,18 +255,15 @@ export const AddCarData = ({ make,
 		<form onSubmit={submit} className="add-car-data">
 
 			<div>
-			<label htmlFor="resort">Make</label>
+			<label htmlFor="make">Make</label>
 			<Autocomplete options={carMakes}
 				   		  ref={input => _make = input}/>
 			</div>
 			<br></br>
 			<div>
 			<label htmlFor="model">Model</label>
-			<input id="model" 
-				   type="text" 
-				   required 
-				   defaultValue={model}
-				   ref={input => _model = input}/>
+			<Autocomplete options={carModels}
+				   		  ref={input => _model = input}/>
 			</div>
 			<br></br>
 			<div>
