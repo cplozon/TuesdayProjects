@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./form.css";
 import Footer from '../../theme/Footer'
-import Sidebar from '../../theme/Sidebar'
+import Sidebar from '../../theme/SidebarTwo'
 import OBMHeader from './OBMHeader'
 
 class Form extends Component {

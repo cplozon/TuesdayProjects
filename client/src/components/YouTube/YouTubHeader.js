@@ -17,7 +17,8 @@ export default (props) => {
 				 				<p id="youtubeheader">Below Is The Best Information Available For Your DIY Automotive Repair Project</p>
 								<p id="youtubeheader">Toggle Available Below With The Best Videos And Articles</p>
 				 			</section>
-				 			<p>www.myautomedic.com</p>
+
+				 			<h3>My Auto Medic</h3>
 				 			
 				 		</div>
 				 	</div>

@@ -15,7 +15,7 @@ export default (props) => {
 				 				<p id="youtubeheader">Enter Your OBD Code And Vin Below</p>
 								<p id="youtubeheader">Results Available Below</p>
 				 			</section>
-				 			<p>www.myautomedic.com</p>
+				 			<h3>My Auto Medic</h3>
 				 			
 				 		</div>
 				 	</div>

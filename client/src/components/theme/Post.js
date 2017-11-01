@@ -11,6 +11,7 @@ export default (props) => {
 					<h5>{props.text}</h5>
 					</div>
 					<ul className="actions">
+					<br />
 						<li><a href={props.href} className="button">Try it Now</a></li>
 					</ul>
 				</div>

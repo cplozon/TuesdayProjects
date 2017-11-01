@@ -16,7 +16,7 @@ export default (props) => {
 								<p id="youtubeheader">Start Below</p>
 
 				 			</section>
-				 			<p>www.myautomedic.com</p>
+				 			<h3>My Auto Medic</h3>
 				 			
 				 		</div>
 				 	</div>

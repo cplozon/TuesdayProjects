@@ -17,6 +17,13 @@ class MainChart extends Component {
 									<div className="inner">
 										<div className="chart">
 											<div className="row" id="flowheading">
+											<div className="col-6-md" id="boxtext">	
+													<p>Diagnose your car problems here.</p>
+													<p>Click on a button that best describes your car problem.</p>
+													<p>Main menu for your car diagnostic analysis.</p>
+													<br />
+
+												</div>
 												
 												<div className="col-6-md">
 													<a href="/LooksLike" className="button submit" id="space">Looks Like</a>
@@ -31,13 +38,6 @@ class MainChart extends Component {
 												<br />
 												</div>
 												
-												<div className="col-6-md" id="boxtext">	
-													<p>Diagnose your car problems here.</p>
-													<p>Click on a button that best describes your car problem.</p>
-													<p>Main menu for your car diagnostic analysis.</p>
-
-												</div>
-										
 											</div>
 
 										</div>
