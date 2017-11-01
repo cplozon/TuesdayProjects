@@ -17,5 +17,6 @@ module.exports = function(app) {
   // Login route
   app.post('/login', requireLogin, AuthenticationController.login);
   app.post('/cars', CarController.saveCar);
+  app.get('/cars', CarController.getCars);
 };
 
