@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import ChartHeader from "./ChartHeader";
-import Sidebar from '../theme/Sidebar';
+import SidebarTwo from '../theme/SidebarTwo';
 import Footer from '../theme/Footer';
 
 class MainChart extends Component {
 	render(){
 		return (
 			<div>
-      			<Sidebar />
+      			<SidebarTwo />
         			<div id="wrapper">
 						<div>
 							<ChartHeader />
@@ -16,7 +16,8 @@ class MainChart extends Component {
 									<p>/</p><br /></div>
 									<div className="inner">
 										<div className="chart">
-											<div className="row">
+											<div className="row" id="flowheading">
+												
 												<div className="col-6-md">
 													<a href="/LooksLike" className="button submit" id="space">Looks Like</a>
 												<br />
@@ -31,9 +32,14 @@ class MainChart extends Component {
 												</div>
 												
 												<div className="col-6-md" id="boxtext">	
-													<p>Step By Step Instructions4</p>
+													<p>Diagnose your car problems here.</p>
+													<p>Click on a button that best describes your car problem.</p>
+													<p>Main menu for your car diagnostic analysis.</p>
+
 												</div>
+										
 											</div>
+
 										</div>
 										<br />
 									</div>

@@ -2360,9 +2360,11 @@ body.is-loading
 
 #mainchart
 	{background-attachment:fixed;
-		background-image:url("../images/backpaper2.jpg");
+		background-image:url("../images/carcomputer.jpg");
 		background-position:top right;
 		background-repeat:no-repeat;background-size:100% 100%}
+
+
 
 .report {
     border: thin ridge black;
@@ -2399,13 +2401,16 @@ body.is-loading
 }
 
 .chart {
+
+		background-image:url("../images/backpaper2.jpg");
+		background-position:top right;
+		background-repeat:no-repeat;background-size:100% 100%
 	border: 1px solid black;
 	margin-left: 20%;
 	margin-right: 20%;
 	margin-top: 10%;
 	margin-bottom: 10%;
 	padding: 25px;
-	background: white;
 	box-shadow: 10px 10px 5px #888888;
 }
 
@@ -2417,4 +2422,20 @@ body.is-loading
 	text-align: center;
 	font-size: 25px;
 	padding-top: 50px;
+}
+
+.articlebutton {
+
+	background-color: darkgrey;
+	font-size: 12px;
+
+}
+
+.container {
+
+	border-top: 2px solid black;
+}
+
+.panel-body {
+	font-size: 12px;
 }

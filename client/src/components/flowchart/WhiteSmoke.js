@@ -1,10 +1,9 @@
-
 import React, { Component } from 'react';
 import ChartHeader from "./ChartHeader";
 import SidebarTwo from '../theme/SidebarTwo';
 import Footer from '../theme/Footer';
 
-class Smoke extends Component {
+class WhiteSmoke extends Component {
 	render(){
 		return (
 			<div>
@@ -20,14 +19,14 @@ class Smoke extends Component {
 											<div className="row" id="flowheading">
 												
 												<div className="col-6-md">
-												<h2>What Color Is The Smoke?</h2>
-												<br />
-													<a href="/BlackSmoke" className="button submit" id="space">Black Smoke</a>
-												<br />
-													<a href="/WhiteSmoke" className="button submit" id="space">White Smoke</a>
-												<br />
-													<a href="/BlueSmoke" className="button submit" id="space">Blue Smoke</a>
-												<br />
+												<h2>When Or Where Do You See The Smoke?</h2>
+													<br />
+													<a href="/WhiteSmokeOne" className="button submit" id="space">It Comes From The Exhaust While Driving</a>
+													<br />
+													<a href="/WhiteSmokeOne" className="button submit" id="space">Right After The Engie Starts</a>
+													
+													<br />
+													<br />
 													<a href="/MainChart" className="button submit" id="space">Start Over</a>
 												<br />
 													
@@ -53,7 +52,6 @@ class Smoke extends Component {
 	}
 }
 
-export default Smoke
-
+export default WhiteSmoke
 
 
