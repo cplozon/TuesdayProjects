@@ -194,36 +194,27 @@ const carModels = [
 class Autocomplete extends Component {
 	
 	get value() {
-		return this.refs.inputMake.value
+		return this.refs.input.value
 	}
+	
 
 	set value(inputValue) {
-		this.refs.inputMake.value = inputValue
+		this.refs.input.value = inputValue
 	}
 
 	render() {
 		return (
 			<div>
 				<div>
-					<input ref="inputMake"
+					<input ref="input"
 					   type="text" 
-					   list="carMakes" />
-					<datalist id="carMakes">
-						{this.props.options.map(
+					   list={this.props.id}/>
+					<datalist id={this.props.id}>
+						{this.props.array.map(
 							(opt, i) => 
 							<option key={i}>{opt}</option>)}
 					</datalist>
-				</div>
-				<div>
-					<input ref="inputCar"
-						type="text" 
-						list="carModels" />
-			 			<datalist id="carModels">
-				 			{this.props.options.map(
-					 			(opt, i) => 
-					 			<option key={i}>{opt}</option>)}
-			 			</datalist>		
-				</div>			
+				</div>							
 			</div>
 		)
 	}
@@ -231,7 +222,7 @@ class Autocomplete extends Component {
 
 
 
-export const AddCarData = ({ make, 
+const AddCarData = ({ make, 
 							 model, 
 							 year, 
 							 onNewCar }) => {
@@ -256,13 +247,15 @@ export const AddCarData = ({ make,
 
 			<div>
 			<label htmlFor="make">Make</label>
-			<Autocomplete options={carMakes}
+			<Autocomplete id={"carMakes"}
+					      array={carMakes}
 				   		  ref={input => _make = input}/>
 			</div>
 			<br></br>
 			<div>
 			<label htmlFor="model">Model</label>
-			<Autocomplete options={carModels}
+			<Autocomplete id={"carModels"}
+						  array={carModels}
 				   		  ref={input => _model = input}/>
 			</div>
 			<br></br>
@@ -279,17 +272,5 @@ export const AddCarData = ({ make,
 		</form>
 	)
 }
-
-AddCarData.defaultProps = {
-	make: "Honda",
-	model: "Accord",
-	year: "2009",
-}
-
-//AddCarData.propTypes = {
-//	make: PropTypes.string.isRequired,
-//	model: PropTypes.string.isRequired,
-//	year: PropTypes.string.isRequired,
-//}
 
 export default AddCarData;
