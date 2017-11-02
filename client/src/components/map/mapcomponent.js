@@ -1,7 +1,9 @@
 import React from "react"
 import { compose, withProps } from "recompose"
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
-import PlacesData from "../../lib/mapsearch"
+import PlacesData from "../../lib/mapsearch";
+import SidebarTwo from '../theme/SidebarTwo';
+import Footer from '../theme/Footer'
 
 const shops = PlacesData.results;
 
@@ -44,10 +46,22 @@ class MyFancyComponent extends React.PureComponent {
   }
 
   render() {
+
+
     return (
+      <div>
+      <SidebarTwo />
+      <div>
+
       <MyMapComponent
         onMarkerClick={this.handleMarkerClick}
       />
+      </div>
+      
+      </div>
+      
+
+
     )
   }
 }
