@@ -9,7 +9,7 @@
     "start": "concurrently \"nodemon server.js\" \"npm run client\"",
     "build": "node scripts/build.js",
     "test": "npm run test --env=jsdom",
-    "eject": "npm run eject", 
+    "eject": "npm run eject" 
   },
   "author": "",
   "license": "ISC",
