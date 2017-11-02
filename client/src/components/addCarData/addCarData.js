@@ -192,6 +192,7 @@ const carModels = [
 
 
 class Autocomplete extends Component {
+
 	
 	get value() {
 		return this.refs.input.value
@@ -202,6 +203,7 @@ class Autocomplete extends Component {
 		this.refs.input.value = inputValue
 	}
 
+	
 	render() {
 		return (
 			<div>
@@ -223,14 +225,17 @@ class Autocomplete extends Component {
 
 
 const AddCarData = ({ make, 
-							 model, 
-							 year, 
-							 onNewCar }) => {
+					  model, 
+					  year, 
+					  onNewCar }) => {
 	
 	let _make, _model, _year
 	
-	const submit = (e) => {
+	const handleSubmit = (e) => {
 		e.preventDefault()
+		console.log('make', this.refs.make.value)
+		console.log('model', this.refs.model.value)
+		console.log('year', this.refs.year.value)
 		onNewCar({
 			make: _make.value,
 			model: _model.value,
@@ -242,8 +247,9 @@ const AddCarData = ({ make,
 		
 	}
 
+
 	return (
-		<form onSubmit={submit} className="add-car-data">
+		<form className="add-car-data">
 
 			<div>
 			<label htmlFor="make">Make</label>
@@ -268,7 +274,7 @@ const AddCarData = ({ make,
 				<label htmlFor="year">Year</label>
 			</div>
 			
-			<button>Submit Car</button>
+			<button onClick={this.handleSubmit}>Submit Car</button>
 		</form>
 	)
 }
