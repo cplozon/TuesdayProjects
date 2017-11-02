@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Diagnostic from './components/ODM';
 import  YouTubeSeach  from './components/YouTube';
 import  Elements  from './components/theme/Elements';
-import AddCarData from './components/addCarData';
+// import AddCarData from './components/addCarData';
 import Gmap from './components/map';
 //import Gmap2 from './components/map';
 import MainChart from './components/flowchart/MainChart';
@@ -40,7 +40,6 @@ const App = (props) =>
 			    <Route exact path={"/login"} component={Login} />
 				<Route exact path={"/VideoSearch"} component={YouTubeSeach} />
 				<Route exact path={"/Diagnostic"} component={Diagnostic} />
-				<Route exact path={"/AddYourCar"} component={AddCarData} />
 				<Route exact path={"/FindMechanics"} component={Gmap} />
 				<Route exact path={"/MainChart"} component={MainChart} />
 				<Route exact path={"/LooksLike"} component={LooksLike} />
@@ -62,6 +61,7 @@ const App = (props) =>
 				<Route exact path={"/HighwaySpeeds"} component={HighwaySpeeds} />
 				<Route exact path={"/SmellOne"} component={SmellOne} />
 				<Route exact path={"/SmellTwo"} component={SmellTwo} />
+
 
 
 				</Switch>

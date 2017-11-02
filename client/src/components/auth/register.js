@@ -5,6 +5,7 @@ import { registerUser } from '../../actions';
 import SidebarTwo from '../theme/SidebarTwo'
 import Footer from '../theme/Footer'
 import LogInHeader from './LogInHeader'
+import AddCarData from '../addCarData/addCarData'
 
 const form = reduxForm({  
   form: 'register',
@@ -70,25 +71,37 @@ class Register extends Component {
           <label>First Name</label>
           <Field name="firstName" className="form-control" component={renderField} type="text" />
         </div>
+        <br />
         <div className="col-md-6">
           <label>Last Name</label>
           <Field name="lastName" className="form-control" component={renderField} type="text" />
         </div>
       </div>
+      <br />
         <div className="row">
           <div className="col-md-12">
             <label>Email</label>
             <Field name="email" className="form-control" component={renderField} type="text" />
           </div>
         </div>
+        <br />
         <div className="row">
           <div className="col-md-12">
             <label>Password</label>
             <Field name="password" className="form-control" component={renderField} type="password" />
           </div>
         </div>
-        <button type="submit" className="btn btn-primary">Register</button>
+           <br />
+              <br />
+        <button type="submit" className="button submit">Register</button>
+        <br />
+        <br />
+        <br />
+        <br />
+          <br />
+      
       </form>
+      <AddCarData />
       <Footer />
       </div>
       </div>
