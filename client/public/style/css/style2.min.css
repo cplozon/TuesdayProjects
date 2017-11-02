@@ -527,42 +527,6 @@ ul.actions li{vertical-align:middle}
 .fa-battery-three-quarters:before{content:"\f241"}
 .fa-battery-2:before,
 
-.fa-hourglass-start:before{content:"\f251"}
-.fa-hourglass-2:before,
-.fa-hourglass-half:before{content:"\f252"}
-.fa-hourglass-3:before,
-.fa-hourglass-end:before{content:"\f253"}
-.fa-hourglass:before{content:"\f254"}
-.fa-hand-grab-o:before,
-.fa-hand-rock-o:before{content:"\f255"}
-.fa-hand-paper-o:before,
-.fa-hand-stop-o:before{content:"\f256"}
-.fa-hand-scissors-o:before{content:"\f257"}
-.fa-hand-lizard-o:before{content:"\f258"}
-.fa-hand-spock-o:before{content:"\f259"}
-.fa-hand-pointer-o:before{content:"\f25a"}
-.fa-hand-peace-o:before{content:"\f25b"}
-.fa-trademark:before{content:"\f25c"}
-.fa-registered:before{content:"\f25d"}
-.fa-creative-commons:before{content:"\f25e"}
-.fa-gg:before{content:"\f260"}
-.fa-gg-circle:before{content:"\f261"}
-.fa-tripadvisor:before{content:"\f262"}
-.fa-odnoklassniki:before{content:"\f263"}
-.fa-odnoklassniki-square:before{content:"\f264"}
-.fa-get-pocket:before{content:"\f265"}
-.fa-wikipedia-w:before{content:"\f266"}
-.fa-safari:before{content:"\f267"}
-.fa-chrome:before{content:"\f268"}
-.fa-firefox:before{content:"\f269"}
-.fa-opera:before{content:"\f26a"}
-.fa-internet-explorer:before{content:"\f26b"}
-
-.fa-black-tie:before{content:"\f27e"}
-.fa-fonticons:before{content:"\f280"}
-.fa-reddit-alien:before{content:"\f281"}
-.fa-edge:before{content:"\f282"}
-.fa-credit-card-alt:before{content:"\f283"}
 .fa-codiepie:before{content:"\f284"}
 .fa-modx:before{content:"\f285"}
 .fa-fort-awesome:before{content:"\f286"}
@@ -2327,6 +2291,7 @@ body.is-loading
 }
 
 #center {
+	background-image:url("../images/backpaper2.jpg");
 	text-align: center;
 }
 
@@ -2395,14 +2360,14 @@ body.is-loading
 }
 
 #centered {
+	background-image:url("../images/backpaper2.jpg");
 	text-align: center;
-	font-size: 32px;
+	font-size: 18px;
 	font-style: bold;
+	padding: 40px;
 }
 
 .chart {
-
-		background-image:url("../images/backpaper2.jpg");
 		background-position:top right;
 		background-repeat:no-repeat;background-size:100% 100%
 	border: 1px solid black;
