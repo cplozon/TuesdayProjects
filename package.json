@@ -2,12 +2,12 @@
   "name": "server",
   "version": "1.0.0",
   "description": "MyAutoMedic",
-  "main": "server/index.js",
+  "main": "index.js",
   "scripts": {
-    "server": "node server.js",
+    "server": "node index.js",
     "client": "node scripts/start-client.js",
-    "start": "node server.js",
-    "start-dev": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "start": "node index.js",
+    "start-dev": "concurrently \"nodemon index.js\" \"npm run client\"",
     "build": "node scripts/build.js",
     "test": "npm run test --env=jsdom",
     "eject": "npm run eject",
@@ -24,6 +24,7 @@
     "morgan": "^1.9.0",
     "passport": "^0.4.0",
     "passport-jwt": "^3.0.0",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7"
   }
 }
