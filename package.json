@@ -6,11 +6,12 @@
   "scripts": {
     "server": "node server.js",
     "client": "node scripts/start-client.js",
-    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "start": "node server.js",
+    "start-dev": "concurrently \"nodemon server.js\" \"npm run client\"",
     "build": "node scripts/build.js",
     "test": "npm run test --env=jsdom",
     "eject": "npm run eject",
-    "postinstall": "npm install --prefix client"
+    "postinstall": "cd client && npm install"
   },
   "author": "",
   "license": "ISC",
