@@ -13,15 +13,18 @@ function generateToken(user) {
 function setUserInfo(request) {
   return {
     _id: request._id,
-    firstName: request.profile.firstName,
-    lastName: request.profile.lastName,
-    email: request.email,
-    role: request.role
+    firstName: request.firstName,
+    lastName: request.lastName,
+    email: request.email
   };
 }
 
 exports.login = function(req, res, next) {
-  let userInfo = setUserInfo(req.user);
+  let user = User.find({email: req.body.email});
+   req.body.firstName = user.firstName;
+   req.body.lastName = user.lastName;
+   req.body._id = user._id;   
+   let userInfo = setUserInfo(req.body);
 
   res.status(200).json({
     token: "JWT " + generateToken(userInfo),

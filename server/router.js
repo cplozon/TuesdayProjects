@@ -15,7 +15,7 @@ module.exports = function(app) {
     res.status(200).send('ping')
   })
   // Login route
-  app.post('/login', requireLogin, AuthenticationController.login);
+  app.post('/login', AuthenticationController.login);
   app.post('/cars', CarController.saveCar);
   app.get('/cars', CarController.getCars);
 };

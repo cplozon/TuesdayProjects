@@ -26,7 +26,9 @@ import AtIdle from './components/flowchart/AtIdle';
 import HighwaySpeeds from './components/flowchart/HighwaySpeeds';
 import SmellOne from './components/flowchart/SmellOne';
 import SmellTwo from './components/flowchart/SmellTwo';
-
+//passport
+import Register from './components/auth/register';  
+import Login from './components/auth/login';  
 
 const App = (props) => 
  {
@@ -34,6 +36,8 @@ const App = (props) =>
 			<Router>
 			<Switch>
 				<Route exact path={"/"} component={Elements} />
+				<Route exact path={"/register"} component={Register} />
+			    <Route exact path={"/login"} component={Login} />
 				<Route exact path={"/VideoSearch"} component={YouTubeSeach} />
 				<Route exact path={"/Diagnostic"} component={Diagnostic} />
 				<Route exact path={"/AddYourCar"} component={AddCarData} />
