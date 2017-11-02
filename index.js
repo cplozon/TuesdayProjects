@@ -11,12 +11,12 @@ const express = require('express'),
 //route for user authorization
 const router = require('./router'); 
 
-
 // Setting up basic middleware for all Express requests
 app.use(logger('dev')); // Log requests to API using morgan
 
 app.use(bodyParser.urlencoded({ extended: false }));  
 app.use(bodyParser.json());  
+app.use(express.static("client/build"));
 
 // Enable CORS from client-side
 app.use(function(req, res, next) {  
