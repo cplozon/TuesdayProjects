@@ -1,7 +1,4 @@
-/*!
- *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
- */
+
 
 .fa.fa-pull-left,
 .fa.pull-left{margin-right:.3em}
@@ -34,11 +31,6 @@
 .fa-lg{font-size:1.33333333em;
 	line-height:.75em;
 	vertical-align:-15%}
-
-
-
-
-
 #header>nav>ul>li,
 .fa-stack,
 ul.actions li{vertical-align:middle}
@@ -939,7 +931,7 @@ input[type=button]{-moz-appearance:none;
 				background-color:#A9A9A9;
 				border:1px solid!important;
 				border-color:rgba(255,255,255,.15)!important;
-				border-radius:3em;color:#fff!important;
+				border-radius:3em;color:#2f363d!important;
 				cursor:pointer;
 				display:inline-block;
 				font-size:1.0em;font-weight:700;height:calc(4.75em + 2px);
@@ -1036,7 +1028,7 @@ input[type=submit]
 input[type=reset]
 .special,
 input[type=button]
-.special{background-color:#fff;color:#212121!important}
+.special{background-color:#171b1e;color:#212121!important}
 .button
 .special:after,
 button
@@ -1205,7 +1197,7 @@ input[type=button]:hover:active:after{opacity:.1}
 	{padding:0 .75em 0 0}form>.actions{margin:2em 0 0!important}
 	@media screen and (max-width:736px)
 	{form .field.half{width:100%;float:none;padding:0}form 
-	.field.half.first{padding:0}}label{color:#fff;font-weight:700;
+	.field.half.first{padding:0}}label{color:#171b1e;font-weight:700;
 	line-height:1.5;margin:0 0 .7em;display:block;font-size:1.1em}
 	input[type=text],
 	input[type=password],
@@ -1220,7 +1212,7 @@ input[type=button]:hover:active:after{opacity:.1}
 		background:rgba(255,255,255,.05);
 		border-radius:
 		.25em;border:none;border:
-		1px solid rgba(255,255,255,.15);
+		1px solid #171b1e;
 		color:inherit;
 		display:block;
 		outline:0;
@@ -1239,7 +1231,7 @@ input[type=button]:hover:active:after{opacity:.1}
 			input[type=tel]:focus,
 			select:focus,
 			textarea:focus
-			{border-color:#fff;
+			{border-color:#bababa;
 				-webkit-box-shadow:0 0 0 1px #fff;
 				box-shadow:0 0 0 1px #fff}
 .select-wrapper
@@ -1318,7 +1310,7 @@ select::-ms-expand
 			input[type=radio]:checked+label:before
 			{background:#fff;
 				border-color:#fff;
-				color:#FBFCFC;
+				color:black;
 				content:'\f00c'}
 			input[type=checkbox]:focus+label:before,
 			input[type=radio]:focus+label:before
@@ -1365,7 +1357,7 @@ select::-ms-expand
 		.wrapper.style2-alt 
 		.icon.major:before{color:#778899}
 		.wrapper.style3 
-		.icon.major:before{color:#FBFCFC}
+		.icon.major:before{color:#778899}
 		.wrapper.style3-alt 
 		.icon.major:before{color:#708090}
 		.image{border:0;display:inline-block}
@@ -1893,9 +1885,9 @@ body.is-loading
 	font-size: 18px;
 	background-color: transparent;
 }
-.youtubebackground {
+/*.youtubebackground {
 	background-color:lightgrey;
-}
+}*/
 /*.media {
   curoer: pointer;
   align-items: center;
@@ -1915,7 +1907,7 @@ body.is-loading
 }
 
 #centerwhite {
-	background-color:darkgrey;
+	
 	text-align: center;
 }
 
@@ -1979,7 +1971,6 @@ body.is-loading
 }
 
 .formone {
-	background-color: black;
 	text-align: left;
 	color: lightgrey;
 	margin:125px;
