@@ -4,10 +4,12 @@
   "description": "MyAutoMedic",
   "main": "server/index.js",
   "scripts": {
-    "start": "node server/index.js",
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
     "test": "npm run test --env=jsdom",
     "eject": "npm run eject", 
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
