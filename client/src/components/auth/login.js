@@ -42,16 +42,21 @@ class Login extends Component {
               {this.renderAlert()}
             <div>
             <label>Email</label>
-            <Field name="email" className="form-control" component="input" type="text" />
+            <Field name="email" className="form-control" component="input" type="text" placeholder="Enter Your Email"/>
           </div>
           <div>
             <label>Password</label>
             <Field name="password" className="form-control" component="input" type="password" />
           </div>
-          <button type="submit" className="btn btn-primary">Login</button>
+            <br />
+              <br />
+          <button type="submit" className="button submit">Login</button>
         </form>
       </div>
       </div>
+      <br />
+      <br />
+      <br />
 
       </section>
       <Footer />
