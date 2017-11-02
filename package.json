@@ -4,7 +4,7 @@
   "description": "MyAutoMedic",
   "main": "index.js",
   "scripts": {
-     "start": "node server.js",
+     "start": "node index.js",
      "client": "node scripts/start-client.js",
      "server": "concurrently \"nodemon server.js\" \"npm run client\"",
      "build": "node scripts/build.js",
