@@ -24,9 +24,9 @@ class YouTubeSearch extends Component {
     this.search('Car Oil Change');
   }
 
-  search(problem, model) {
-    console.log(problem, model)
-    let term = problem + " " + model
+  search(problem, year, make, model) {
+    console.log(problem, year, make, model)
+    let term = problem + " " + year + " " + make + " " + model
     YTSearch({key: API_KEY, term: term}, videos => this.setState({videos: videos, selectedVideo: videos[0]}));
   }
 
