@@ -2,6 +2,7 @@
 const express = require('express'),  
       app = express(),
       bodyParser = require('body-parser'),
+      path = require('path'),
       logger = require('morgan'),
       mongoose = require('mongoose'),
       config = require('./config/main');
@@ -29,6 +30,11 @@ app.use(function(req, res, next) {
 // Database Connection
 mongoose.connect(config.database);  
 router(app);  
+
+// run server
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname+'/client/build/index.html'));
+});
 
 // Start the server
 const server = app.listen(config.port);  
