@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';  
 import { Field, reduxForm } from 'redux-form';  
 import { registerUser } from '../../actions';
+import SidebarTwo from '../theme/SidebarTwo'
+import Footer from '../theme/Footer'
+import LogInHeader from './LogInHeader'
 
 const form = reduxForm({  
   form: 'register',
@@ -56,8 +59,12 @@ class Register extends Component {
     const { handleSubmit } = this.props;
 
     return (
-      <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
-      {this.renderAlert()}
+      <div>
+      <SidebarTwo />
+        <div id="wrapper">
+        <LogInHeader />
+        <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
+        {this.renderAlert()}
       <div className="row">
         <div className="col-md-6">
           <label>First Name</label>
@@ -82,6 +89,9 @@ class Register extends Component {
         </div>
         <button type="submit" className="btn btn-primary">Register</button>
       </form>
+      <Footer />
+      </div>
+      </div>
     );
   }
 }

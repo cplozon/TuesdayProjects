@@ -16,10 +16,10 @@ class Form extends Component {
         <OBMHeader />
           <section id="centered">
             <div className="centers">
-            <p id="centered">Diagnostic Trouble Codes or OBD2 Trouble Codes are codes that the car’s OBD system uses to notify you about an issue. Each code corresponds to a fault detected in the car. When the vehicle detects an issue, it will activate the corresponding trouble code.
+            <h3 id="centered">Diagnostic Trouble Codes or OBD2 Trouble Codes are codes that the car’s OBD system uses to notify you about an issue. Each code corresponds to a fault detected in the car. When the vehicle detects an issue, it will activate the corresponding trouble code.
               A vehicle stores the trouble code in it’s memory when it detects a component or system that’s not operating within acceptable limits. The code will help you to identify and fix the issue within the car.
-              Each trouble code consists of one letter and four digits, such as P1234.</p>
-              <h1 id="centered">Vehicle Diagnostic - Enter Your Information</h1>
+              Each trouble code consists of one letter and four digits, such as P1234.</h3>
+              <h3 id="centered">Vehicle Diagnostic - Enter Your Information</h3>
                 <form className="formone">
                 <label>OBD Code</label>
                   <input

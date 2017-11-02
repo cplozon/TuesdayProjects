@@ -18,9 +18,9 @@ class MainChart extends Component {
 										<div className="chart">
 											<div className="row" id="flowheading">
 											<div className="col-6-md" id="boxtext">	
-													<p>Diagnose your car problems here.</p>
-													<p>Click on a button that best describes your car problem.</p>
-													<p>Main menu for your car diagnostic analysis.</p>
+													<h3>Diagnose your car problems here.</h3>
+													<h3>Click on a button that best describes your car problem.</h3>
+													<h3>Main menu for your car diagnostic analysis.</h3>
 													<br />
 
 												</div>

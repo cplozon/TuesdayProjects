@@ -13,7 +13,7 @@ class BlackSmoke extends Component {
 						<div>
 							<ChartHeader />
 								<section id="mainchart">
-								<div className="bigtext">
+								<div className="boxtext">
 									<p>/</p><br /></div>
 									<div className="inner">
 										<div className="chart">
@@ -21,7 +21,8 @@ class BlackSmoke extends Component {
 												
 												<div className="col-6-md">
 													<div className="col-6-md">
-													<h2>When and where do you see black smoke?</h2>
+													<h3>When and where do you see black smoke?</h3>
+													<br />
 													<a href="/BlackSmokeOne" className="button submit" id="space">It comes from the exhaust while driving</a>
 												<br />
 													<a href="/BlackSmokeTwo" className="button submit" id="space">Right After Starting The Engine</a>
