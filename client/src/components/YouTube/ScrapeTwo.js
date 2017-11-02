@@ -93,7 +93,7 @@ class ScrapeTwo extends Component {
               <div className="panel-heading">
                 <h1 className="panel-title">
                   <strong>
-                    <i className="fa fa-download" aria-hidden="true"></i> Saved Articles</strong>
+                    <i className="fa fa-download" aria-hidden="true"></i></strong>
                 </h1>
               </div>
               <div className="panel-body">
