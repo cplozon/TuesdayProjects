@@ -42,31 +42,28 @@ export default (props) => {
 						</ul>
 					</div>
 				</section>
-
-				
 				
 				<section id="one" className="wrapper style2 spotlights">
 					<Post title="Search Your Car Problem" image={pic8} text="Find The Best Information Available For Your DIY Automotive Repair Project" href="/VideoSearch" />
 					<Post title="Auto Medic Diagnostic Tool" image={pic4} text="Use Our Unique Step By Step Diagnostic Tool For Solving Your Automotive Problem" href="/MainChart" />
-					<Post title="Search Your On-Board Diagnostic Code" image={pic9} text="Search DBD Code To Trouble Shoot Your Car Problem" href="/Diagnostic" />
+					<Post title="Search Your On-Board Diagnostic Code" image={pic9} text="Search OBD Code To Trouble Shoot Your Car Problem" href="/Diagnostic" />
 					<Post title="Find The Best Local Mechanics In Your Area" image={pic7} text="Find The Best Mechanics In Your Area" href="/FindMechanics" />
 				</section>
 
-				
-
-				<section id="two" className="wrapper style3 fade-up">
+				<section id="twogrey" className="wrapper style3 fade-up">
 					<div className="inner">
 						<h2>Account Log In</h2>
-						<p>Sign In My Account</p>
-						<div className="features">
-							<Feature icon="icon major fa-code" />
-							<Feature icon="icon major fa-lock" />
-						</div>
-						<ul className="actions">
-							<li><a href="/" className="button">Learn more</a></li>
-						</ul>
-					</div>
+							<ul className="actions">
+                                <li><a href="/login" className="button">Sign-In</a></li>
+                          	</ul>
+                          	<br /> 
+                         <h2>Register for An Account</h2>
+                            <ul className="actions">
+                                <li><a href="/register" className="button">Register</a></li>
+                            </ul>
+                    </div> 
 				</section>
+
 
 				 <section id="three" className="wrapper style1 fade-up">
 				 	<div className="inner">

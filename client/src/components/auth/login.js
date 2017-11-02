@@ -3,6 +3,10 @@ import { connect } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';  
 import { Link } from 'react-router';  
 import { loginUser } from '../../actions';
+import SidebarTwo from '../theme/SidebarTwo'
+import Footer from '../theme/Footer'
+import LogInHeader from './LogInHeader'
+
 
 const form = reduxForm({  
   form: 'login'
@@ -27,10 +31,16 @@ class Login extends Component {
     const { handleSubmit } = this.props;
 
     return (
-      <div>
-        <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
-        {this.renderAlert()}
-          <div>
+    <div>
+      <SidebarTwo />
+        <div id="wrapper">
+          <LogInHeader />
+            <section id="centered">
+            <div className="row" id="centerwhite">
+             <div className="col-md-12">
+              <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
+              {this.renderAlert()}
+            <div>
             <label>Email</label>
             <Field name="email" className="form-control" component="input" type="text" />
           </div>
@@ -41,6 +51,13 @@ class Login extends Component {
           <button type="submit" className="btn btn-primary">Login</button>
         </form>
       </div>
+      </div>
+
+      </section>
+      <Footer />
+      </div>
+      </div>
+
     );
   }
 }
