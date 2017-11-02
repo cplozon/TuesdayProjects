@@ -4,14 +4,12 @@
   "description": "MyAutoMedic",
   "main": "index.js",
   "scripts": {
-    "server": "node index.js",
-    "client": "node scripts/start-client.js",
-    "start": "node index.js",
-    "start-dev": "concurrently \"nodemon index.js\" \"npm run client\"",
-    "build": "node scripts/build.js",
-    "test": "npm run test --env=jsdom",
-    "eject": "npm run eject",
-    "postinstall": "cd client && npm install"
+     "start": "node server.js",
+     "client": "node scripts/start-client.js",
+     "server": "concurrently \"nodemon server.js\" \"npm run client\"",
+     "build": "node scripts/build.js",
+     "test": "echo \"Error: no test specified\" && exit 1"
+   },
   },
   "author": "",
   "license": "ISC",

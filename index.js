@@ -31,11 +31,7 @@ app.use(function(req, res, next) {
 mongoose.connect(config.database);  
 router(app);  
 
-// run server
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname+'/client/build/index.html'));
-});
-
 // Start the server
-const server = app.listen(config.port);  
-console.log('Your server is running on port ' + config.port + '.');  
+const server = app.listen(config.port, function() {
+  console.log('Your server is running on port ' + config.port + '.');
+});
