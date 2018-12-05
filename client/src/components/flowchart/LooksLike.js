@@ -16,9 +16,11 @@ class LooksLike extends Component {
 									<p>/</p><br /></div>
 									<div className="inner">
 										<div className="chart">
-											<div className="row" id="flowhead">
+											<div className="row" id="boxtext">
 												
 												<div className="col-6-md">
+												<h3>Make Another Selection</h3>
+												<br />
 													<a href="/Smoke" className="button submit" id="space">Smoke</a>
 												<br />
 													<a href="/Smoke" className="button submit" id="space">Poor Gas Milage</a>

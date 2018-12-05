@@ -2,6 +2,7 @@
 const express = require('express'),  
       app = express(),
       bodyParser = require('body-parser'),
+      path = require('path'),
       logger = require('morgan'),
       mongoose = require('mongoose'),
       config = require('./config/main');
@@ -10,12 +11,12 @@ const express = require('express'),
 //route for user authorization
 const router = require('./router'); 
 
-
 // Setting up basic middleware for all Express requests
 app.use(logger('dev')); // Log requests to API using morgan
 
 app.use(bodyParser.urlencoded({ extended: false }));  
 app.use(bodyParser.json());  
+app.use(express.static("client/build"));
 
 // Enable CORS from client-side
 app.use(function(req, res, next) {  
@@ -31,5 +32,6 @@ mongoose.connect(config.database);
 router(app);  
 
 // Start the server
-const server = app.listen(config.port);  
-console.log('Your server is running on port ' + config.port + '.');  
+const server = app.listen(config.port, function() {
+  console.log('Your server is running on port ' + config.port + '.');
+});

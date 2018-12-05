@@ -20,7 +20,7 @@ class Smoke extends Component {
 											<div className="row" id="flowheading">
 												
 												<div className="col-6-md">
-												<h2>What Color Is The Smoke?</h2>
+												<h3>What Color Is The Smoke?</h3>
 												<br />
 													<a href="/BlackSmoke" className="button submit" id="space">Black Smoke</a>
 												<br />

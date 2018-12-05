@@ -24,7 +24,9 @@ class YouTubeSearch extends Component {
     this.search('Car Oil Change');
   }
 
-  search(term) {
+  search(problem, year, make, model) {
+    console.log(problem, year, make, model)
+    let term = problem + " " + year + " " + make + " " + model
     YTSearch({key: API_KEY, term: term}, videos => this.setState({videos: videos, selectedVideo: videos[0]}));
   }
 
@@ -39,19 +41,19 @@ class YouTubeSearch extends Component {
         <div id="wrapper">
         <YouTubHeader />
           <div className="container-fluid" id="wrapper">
-            <div className="row" id="center">
+            <div className="row" id="centerwhite">
              <div className="col-md-12">
               <SearchBar onSearchTerm={this.search.bind(this)} />
             </div>
           </div>
      
-        <div className="row" id="center">
+        <div className="row" id="centerwhite">
           <div className="col-md-6">
            <br />
             <Detail video={this.state.selectedVideo} />
           </div>
           <br />
-          <div className=".col-md-6"id="center">
+          <div className=".col-md-6"id="centerwhite">
            <br />
             <List
               videos={this.state.videos}

@@ -2,12 +2,14 @@
   "name": "server",
   "version": "1.0.0",
   "description": "MyAutoMedic",
-  "main": "server/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
-    "test": "npm run test --env=jsdom",
-    "eject": "npm run eject", 
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    "start": "node index.js",
+    "client": "node scripts/start-client.js",
+    "server": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd client && npm install"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +22,7 @@
     "morgan": "^1.9.0",
     "passport": "^0.4.0",
     "passport-jwt": "^3.0.0",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7"
   }
 }
